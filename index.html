@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --deep-orange: #FF5722;
+            --deep-orange-light: #FF8A65;
+            --deep-orange-dark: #E64A19;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FBE9E7;
+            color: #333;
+        }
+
+        .top-bar {
+            background-color: var(--deep-orange-dark);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+       
+      .logo-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-image {
+            width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--deep-orange);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu-section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--deep-orange-dark);
+            border-bottom: 2px solid var(--deep-orange);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: grid;
+            gap: 15px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: translateX(5px);
+            background-color: #FFF3E0;
+        }
+
+        .item-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: var(--deep-orange);
+            font-size: 1.1em;
+        }
+
+        .special-offers {
+            background-color: #FFF3E0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .contact-section {
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-card i {
+            color: var(--deep-orange);
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .badge-new {
+            background-color: var(--deep-orange);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--deep-orange-dark);
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .menu-item {
+                padding: 8px 12px;
+            }
+
+            .contact-grid {
+                margin:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-phone"></i> +254 746 495101
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-address-book"></i> Open: 7AM - 10PM
+        </div>
+    </div>
+
+    <div class="container">
+       <div class="logo-section">
+            <!-- Using a placeholder image - replace src with your actual logo path -->
+            <img src="logo.png" alt="Tasty Resort Logo" class="logo-image">
+            <h2>Le'lesan Waterfront Resort</h2>
+        </div>
+
+        <header>
+            <h1>Our Menu</h1>
+        </header>
+
+        <!-- <div class="special-offers">
+            <h2>Today's Specials</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Combo: Chapati + Beef Stew<span class="badge-new">NEW</span></span>
+                    <span class="item-price">KSH 250/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Family Pack: 4 Chips Masala + Drinks</span>
+                    <span class="item-price">KSH 800/-</span>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="menu-section">
+            <h2>Main Dishes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Chapati</span>
+                    <span class="item-price">KSH 50/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chips Plain</span>
+                    <span class="item-price">KSH 200/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chips Masala</span>
+                    <span class="item-price">KSH 250/-</span>
+                </div>
+                 <div class="menu-item">
+                    <span class="item-name">Chips sausage</span>
+                    <span class="item-price">KSH 300/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Chips Chicken</span>
+                    <span class="item-price">KSH 400/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Beef Choma</span>
+                    <span class="item-price">KSH 350/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Ugali Managu</span>
+                    <span class="item-price">KSH 150/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Samaki Ugali</span>
+                    <span class="item-price">KSH 500/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Rice Beef</span>
+                    <span class="item-price">KSH 400/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Beef Wet Fry</span>
+                    <span class="item-price">KSH 400/-</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Beverages</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Tea</span>
+                    <span class="item-price">KSH 50/-</span>
+                </div>
+                <!-- <div class="menu-item">
+                    <span class="item-name">Fresh Juice</span>
+                    <span class="item-price">KSH 100/-</span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <span class="item-name">Ice Cream</span>
+                    <span class="item-price">KSH 30/-</span>
+                </div>
+                <div class="menu-item">
+                    <span class="item-name">Ice Pop</span>
+                    <span class="item-price">KSH 20/-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>123 Main Street<br>Nairobi, Kenya</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+254 123 456 789<br>+254 987 654 321</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>lelesanwaterfrontresort@gmail.com<br></p>
+                </div>
+            </div>
+        </div> -->
+
+        <footer>
+            <p>© 2024 Le'lesan waterfront Resort </br>x </br>Kylex inc. </br> All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
